@@ -1,0 +1,8 @@
+<div class="contents row" >
+    <p><%= @nickname%>さんの投稿一覧</p>
+    <% @blogs.each do |blog| %>
+        <%= simple_format(blog.text) %>
+        <span class="name"><%= blog.user.nickname %></span>
+      </div>
+    <% end %>
+  </div>

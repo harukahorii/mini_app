@@ -1,0 +1,15 @@
+<div>
+    <%= form_with url: blogs_path, local: true do |form| %>
+      <h5>
+        投稿する
+      </h5>
+      <div>
+        <label>Text:</label>
+        <%= form.text_field :text %>
+      </div>
+      <div>
+        <%= form.submit %>
+      </div>
+    <% end %>
+    </form>
+  </div>
